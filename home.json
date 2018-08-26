@@ -1,4 +1,11 @@
 [{
+	"time": "1535266230",
+	"title": "QRServer",
+	"intro": "Generate and cache QR codes in a Go way.",
+	"site": "https://github.com/mixcm/QRServer",
+	"target": "1",
+	"pic": "https://i.loli.net/2018/08/25/5b810426c3e1b.jpg"
+}, {
 	"time": "1525530924",
 	"title": "Cat UI For Angel",
 	"intro": "一个少女心满满的单栏免费 Typecho 主题",
