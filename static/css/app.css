@@ -1,0 +1,519 @@
+/*
+ * @Author: 折影轻梦 (https://i.chainwon.com/)
+ * @Date: 2018-03-31 18:12:54
+ * @Last Modified by: 折影轻梦 (https://i.chainwon.com/)
+ * @Last Modified time: 2018-10-07 00:34:26
+ */
+
+#mixcm-content {
+    -webkit-animation: fade-in .5s;
+    animation: fade-in .5s;
+    min-height: calc(100vh - 710px);
+    margin-top: -245px;
+    position: relative;
+}
+
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+#mixcm-content .mixcm-item {
+    -webkit-transition: all .35s;
+    transition: all .35s;
+    overflow: hidden;
+    -webkit-box-shadow: 0 0.5em 3em rgba(161, 177, 204, 0.4);
+    box-shadow: 0 0.5em 3em rgba(161, 177, 204, 0.4);
+}
+
+#mixcm-content .mixcm-item.mixcm-card-bk-logo-name .mixcm-background {
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    width: 100%;
+    height: 110px;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4;
+}
+
+#mixcm-content .mixcm-item.mixcm-card-bk-logo-name:hover .mixcm-background {
+    opacity: 1;
+}
+
+#mixcm-content .mixcm-item.mixcm-card-bk-logo-name .mixcm-logo {
+    text-align: center;
+    margin-top: -50px;
+    position: relative;
+}
+
+#mixcm-content .mixcm-item.mixcm-card-bk-logo-name .mixcm-logo a {
+    display: inline-block;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+#mixcm-content .mixcm-item.mixcm-card-bk-logo-name .mixcm-logo img {
+    border-radius: 100%;
+    height: 100px;
+    width: 100px;
+    border: 4px solid #fff;
+    background: #fff;
+    display: block;
+}
+
+#mixcm-content .mixcm-item.mixcm-card-bk-logo-name .mixcm-name {
+    line-height: 29px;
+    text-align: center;
+    font-weight: 900;
+    margin-bottom: -5px;
+}
+
+#mixcm-content .mixcm-item.mixcm-card-bk-logo-name .mixcm-bio {
+    margin: 6px 15px;
+    text-align: center;
+    color: #888;
+    font-size: 13px;
+    height: 40px;
+    line-height: 20px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+#mixcm-content .mixcm-item.mixcm-card-bk-logo-name .mixcm-btn {
+    padding: 7px 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: #fff;
+    background: #a480ff;
+    margin: auto;
+    width: 50px;
+    margin-bottom: 16px;
+}
+
+#mixcm-content .mixcm-item-col-12.mixcm-card-bk-logo-name {
+    overflow: hidden;
+    height: 400px;
+    position: relative;
+}
+
+#mixcm-content .mixcm-item-col-12.mixcm-card-bk-logo-name .mixcm-background {
+    width: calc(100% + 60px);
+    margin-left: -30px;
+    height: calc(100% + 60px);
+    background-size: cover;
+    background-position: center;
+    -webkit-filter: blur(20px);
+    filter: blur(20px);
+    opacity: .6;
+    position: absolute;
+}
+
+#mixcm-content .mixcm-item-col-12.mixcm-card-bk-logo-name .mixcm-logo {
+    text-align: center;
+    margin-top: 145px;
+    position: relative;
+}
+
+#mixcm-content .mixcm-item-col-12.mixcm-card-bk-logo-name .mixcm-name {
+    line-height: 36px;
+    text-align: center;
+    font-weight: 900;
+    margin-bottom: -12px;
+}
+
+#mixcm-content .mixcm-item-col-12.mixcm-card-bk-logo-name .mixcm-bio {
+    margin: 6px 15px;
+    text-align: center;
+    color: #888;
+    font-size: 13px;
+    line-height: 20px;
+    overflow: hidden;
+}
+
+#mixcm-content .mixcm-item-col-12.mixcm-card-bk-logo-name .mixcm-btn {
+    padding: 7px 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: #fff;
+    background: #5755d9;
+    margin-bottom: 16px;
+    width: 50px;
+    margin: auto;
+    opacity: .7;
+}
+
+#mixcm-content .mixcm-banner .mixcm-banner-item {
+    overflow: hidden;
+    height: calc(100% - 68px);
+    color: #fff;
+    padding: 12em 6em 10em 6em;
+    position: relative;
+    text-align: center;
+}
+
+#mixcm-content .mixcm-banner .mixcm-banner-item .mixcm-background {
+    -moz-pointer-events: none;
+    -webkit-pointer-events: none;
+    -ms-pointer-events: none;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+#mixcm-content .mixcm-banner .mixcm-banner-item .mixcm-background:before {
+    -webkit-transition: opacity 1.3125s ease-in-out;
+    transition: opacity 1.3125s ease-in-out;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(45deg, #a480ff, #ff8f83);
+    opacity: 0.7;
+    z-index: 1;
+}
+
+#mixcm-content .mixcm-banner .mixcm-banner-item .mixcm-content {
+    position: relative;
+    z-index: 1;
+}
+
+#mixcm-content .mixcm-banner .mixcm-safari {
+    border-radius: 7px 7px 0 0;
+    -webkit-box-shadow: 0 0 50px #5a5a5a;
+    box-shadow: 0 0 50px #5a5a5a;
+    position: absolute;
+    bottom: 0;
+    background-color: #fff;
+    overflow: hidden;
+    width: 100%;
+    border: 1px solid rgb(216, 216, 216);
+    border-bottom: none;
+}
+
+#mixcm-content .mixcm-banner .mixcm-safari .mixcm-header {
+    background-color: #ebebec;
+    height: 35px;
+}
+
+#mixcm-content .mixcm-banner .mixcm-safari .mixcm-header .mixcm-link {
+    background: rgb(249, 249, 250);
+    width: 50%;
+    top: 6px;
+    position: absolute;
+    left: 25%;
+    border-radius: 5px;
+    line-height: 23px;
+    text-align: center;
+    -webkit-box-shadow: 0 1px 1px #cfcdcd;
+    box-shadow: 0 1px 1px #cfcdcd;
+}
+
+#mixcm-content .mixcm-banner .mixcm-safari .mixcm-header .mixcm-btn::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: #f58b81;
+    border-radius: 100%;
+    position: absolute;
+    right: 18px;
+    top: -1px;
+    border: 1px solid #e38a7a;
+}
+
+#mixcm-content .mixcm-banner .mixcm-safari .mixcm-header .mixcm-btn {
+    width: 12px;
+    height: 12px;
+    background-color: #f8cb68;
+    border-radius: 100%;
+    position: absolute;
+    right: 34px;
+    top: 11px;
+    border: 1px solid #e7c279;
+}
+
+#mixcm-content .mixcm-banner .mixcm-safari .mixcm-header .mixcm-btn::after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: #68d374;
+    border-radius: 100%;
+    position: absolute;
+    left: 18px;
+    top: -1px;
+    border: 1px solid #79c488;
+}
+
+#mixcm-content .mixcm-banner .mixcm-safari .mixcm-body {
+    font-size: 0;
+    max-height: 480px;
+}
+
+#mixcm-content .mixcm-banner .mixcm-safari .mixcm-body img {
+    width: 100%;
+}
+
+#mixcm-content .mixcm-banner .mixcm-safari .mixcm-body iframe {
+    width: 100%;
+    height: 500px;
+}
+
+#mixcm-content .mixcm-project {
+    padding: 30px 30px 0 30px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#mixcm-content .mixcm-card-bk-name {
+    position: relative;
+    text-align: center;
+    height: 220px;
+    border-radius: 2px;
+}
+
+#mixcm-content .mixcm-card-bk-name::before {
+    -webkit-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0.85;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+
+#mixcm-content .mixcm-card-bk-name:hover a div,
+#mixcm-content .mixcm-card-bk-name:hover::before {
+    opacity: 0;
+}
+
+#mixcm-content .mixcm-card-bk-name:nth-child(6n+1)::before {
+    background-color: #7ecaf6;
+}
+
+#mixcm-content .mixcm-card-bk-name:nth-child(6n+2)::before {
+    background-color: #ae85ca;
+}
+
+#mixcm-content .mixcm-card-bk-name:nth-child(6n+3)::before {
+    background-color: #f2849e;
+}
+
+#mixcm-content .mixcm-card-bk-name:nth-child(6n+4)::before {
+    background-color: #e7b788;
+}
+
+#mixcm-content .mixcm-card-bk-name:nth-child(6n+5)::before {
+    background-color: #8499e7;
+}
+
+#mixcm-content .mixcm-card-bk-name:nth-child(6n+6)::before {
+    background-color: #7bd0c1;
+}
+
+#mixcm-content .mixcm-card-bk-name a {
+    color: #fff;
+}
+
+#mixcm-content .mixcm-card-bk-name .mixcm-background {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    opacity: .3;
+}
+
+#mixcm-content .mixcm-card-bk-name:hover .mixcm-background {
+    opacity: 1;
+}
+
+#mixcm-content .mixcm-card-bk-name .mixcm-major {
+    position: absolute;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -moz-transition: background-color 0.5s ease, -moz-transform 0.5s ease;
+    -ms-transition: background-color 0.5s ease, -ms-transform 0.5s ease;
+    width: 100%;
+    height: 100%;
+    padding: 3rem;
+    z-index: 2;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#mixcm-content .mixcm-card-bk-name .mixcm-major h3,
+#mixcm-content .mixcm-card-bk-name .mixcm-major p {
+    margin: 0;
+}
+
+#mixcm-content .mixcm-card-bk-name .mixcm-major h3 {
+    margin-bottom: 10px;
+}
+
+#mixcm-content .mixcm-article .mixcm-header {
+    padding: 6rem;
+    background-color: #f8f9fa;
+}
+
+#mixcm-content .mixcm-article .mixcm-header p {
+    color: #acb3c2;
+    margin-bottom: 0;
+}
+
+#mixcm-content .mixcm-article .mixcm-header h1 {
+    margin: 0;
+    font-size: 3rem;
+    color: #454d5d;
+}
+
+#mixcm-content .mixcm-article .mixcm-header a {
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+#mixcm-content .mixcm-article .mixcm-content {
+    padding: 4rem 6rem;
+}
+
+#mixcm-content .mixcm-article .mixcm-content h1,
+#mixcm-content .mixcm-article .mixcm-content h2,
+#mixcm-content .mixcm-article .mixcm-content h3,
+#mixcm-content .mixcm-article .mixcm-content h4 {
+    margin: 2rem 0;
+    color: #7a7d86;
+}
+
+#mixcm-content .mixcm-article .mixcm-content h3::before {
+    content: "# ";
+    color: #e06870;
+}
+
+#mixcm-content .mixcm-article .mixcm-content p {
+    margin: 2rem 0;
+}
+
+#mixcm-content .mixcm-article .mixcm-content img {
+    max-width: 100%;
+    border-radius: 1px;
+    border: 1px solid #f8f9fa;
+}
+
+#mixcm-content .mixcm-article .mixcm-content blockquote {
+    font-family: "SF Mono", "Segoe UI Mono", "Roboto Mono", Menlo, Courier, monospace;
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 1px;
+    margin: 2rem 0;
+    color: #e06870;
+    font-size: .9em;
+    line-height: 25px;
+}
+
+#mixcm-content .mixcm-article .mixcm-content blockquote a {
+    text-decoration: none;
+    color: #5755d9;
+}
+
+#mixcm-content div[id^="partner"] {
+    padding: 0 !important;
+    text-align: center;
+}
+
+@media screen and (max-width:1110px) {
+    .mixcm-container {
+        width: calc(100% - 30px);
+        margin: 0 15px;
+    }
+}
+@media screen and (max-width:720px) {
+    #mixcm-header .mixcm-children-nav .mdui-panel-item-arrow {
+        right: -1px;
+    }
+    [class*=mixcm-item-col-] {
+        margin: 0 15px 15px 0;
+    }
+    .mixcm-item-col-3 {
+        width: calc(50% - 7.5px);
+    }
+    .mixcm-item-col-4 {
+        width: 100%;
+    }
+    .mixcm-item-col-4:nth-child(3n+3) {
+        margin-right: 15px;
+    }
+    .mixcm-item-col-3:nth-child(2n+2),
+    .mixcm-item-col-4:nth-child(2n+2) {
+        margin-right: 0;
+    }
+    #mixcm-content .mixcm-project {
+        padding: 15px 15px 0 15px;
+    }
+    #mixcm-content .mixcm-item.mixcm-card-bk-logo-name .mixcm-logo {
+        margin-top: -35px;
+    }
+    #mixcm-content .mixcm-item.mixcm-card-bk-logo-name .mixcm-logo img {
+        width: 70px;
+        height: 70px;
+    }
+    #mixcm-content .mixcm-item.mixcm-card-bk-logo-name .mixcm-background {
+        height: 80px;
+    }
+    #mixcm-content .mixcm-banner .mixcm-banner-item {
+        padding: 2em 0 2em 0;
+    }
+    #mixcm-content .mixcm-article .mixcm-header {
+        padding: 4rem 2rem;
+    }
+    #mixcm-content .mixcm-article .mixcm-content {
+        padding: 2rem;
+    }
+}
