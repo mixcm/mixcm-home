@@ -1,32 +1,31 @@
-importScripts('https://cdn.jsdelivr.net/npm/workbox-cdn@4.3.1/workbox/workbox-sw.js')
+importScripts('/_nuxt/workbox.4c4f5ca6.js')
 
-// --------------------------------------------------
-// Configure
-// --------------------------------------------------
-
-// Set workbox config
-workbox.setConfig({
-  "debug": false
+workbox.precaching.precacheAndRoute([
+  {
+    "url": "/_nuxt/app.62380c9.js",
+    "revision": "88d927105acf9aebdaf90f932e3744f1"
+  },
+  {
+    "url": "/_nuxt/pages/index.0d434b7.js",
+    "revision": "1f812d6089902b8173c5f861e035239e"
+  },
+  {
+    "url": "/_nuxt/pages/page/about.fd07ccc.js",
+    "revision": "08d6dca5ad57313b8cb59da9d9172bd5"
+  },
+  {
+    "url": "/_nuxt/runtime.93ca6cf.js",
+    "revision": "b67147213925e879b312201d97b5e679"
+  }
+], {
+  "cacheId": "mixcm-home",
+  "directoryIndex": "/",
+  "cleanUrls": false
 })
 
-// Start controlling any existing clients as soon as it activates
-workbox.core.clientsClaim()
+workbox.clientsClaim()
+workbox.skipWaiting()
 
-// Skip over the SW waiting lifecycle stage
-workbox.core.skipWaiting()
+workbox.routing.registerRoute(new RegExp('/_nuxt/.*'), workbox.strategies.cacheFirst({}), 'GET')
 
-workbox.precaching.cleanupOutdatedCaches()
-
-// --------------------------------------------------
-// Precaches
-// --------------------------------------------------
-
-// Precache assets
-
-// --------------------------------------------------
-// Runtime Caching
-// --------------------------------------------------
-
-// Register route handlers for runtimeCaching
-workbox.routing.registerRoute(new RegExp('/_nuxt/'), new workbox.strategies.CacheFirst ({}), 'GET')
-workbox.routing.registerRoute(new RegExp('/'), new workbox.strategies.NetworkFirst ({}), 'GET')
+workbox.routing.registerRoute(new RegExp('/.*'), workbox.strategies.networkFirst({}), 'GET')
